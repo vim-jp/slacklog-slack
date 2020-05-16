@@ -101,6 +101,10 @@ type Msg struct {
 	// added for slacklog project.
 
 	Root *Message `json:"root,omitempty"`
+
+	DisplayAsBot bool   `json:"display_as_bot,omitempty"`
+	SourceTeam   string `json:"source_team,omitempty"`
+	UserTeam     string `json:"user_team,omitempty"`
 }
 
 const (
@@ -117,7 +121,7 @@ type Icon struct {
 
 	// added for slacklog project.
 
-	Image48   string `json:"image_48,omitempty"`
+	Image48 string `json:"image_48,omitempty"`
 }
 
 // Edited indicates that a message has been edited.
