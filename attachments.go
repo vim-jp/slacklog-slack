@@ -102,4 +102,7 @@ type Attachment struct {
 	VideoHTML       string `json:"video_html,omitempty"`
 	VideoHTMLWidth  int    `json:"video_html_width,omitempty"`
 	VideoHTMLHeight int    `json:"video_html_height,omitempty"`
+
+	FromURL string `json:"from_url,omitempty"`
+	OriginalURL string `json:"original_url,omitempty"`
 }

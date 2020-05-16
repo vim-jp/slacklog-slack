@@ -97,6 +97,10 @@ type Msg struct {
 
 	// Block type Message
 	Blocks Blocks `json:"blocks,omitempty"`
+
+	// added for slacklog project.
+
+	Root *Message `json:"root,omitempty"`
 }
 
 const (
@@ -110,6 +114,10 @@ const (
 type Icon struct {
 	IconURL   string `json:"icon_url,omitempty"`
 	IconEmoji string `json:"icon_emoji,omitempty"`
+
+	// added for slacklog project.
+
+	Image48   string `json:"image_48,omitempty"`
 }
 
 // Edited indicates that a message has been edited.

@@ -91,6 +91,16 @@ type File struct {
 	// added for slacklog project.
 
 	ThumbVideo string `json:"thumb_video,omitempty"`
+
+	DeanimateGif   string `json:"deanimate_gif,omitempty"`
+	DisplayAsBot   bool   `json:"display_as_bot"`
+	HasRichPreview bool   `json:"has_rich_preview"`
+	Thumb480Gif    string `json:"thumb_480_gif,omitempty"`
+	Thumb800       string `json:"thumb_800,omitempty"`
+	Thumb800H      int    `json:"thumb_800_h,omitempty"`
+	Thumb800W      int    `json:"thumb_800_w,omitempty"`
+	ThumbTiny      string `json:"thumb_tiny,omitempty"`
+	Username       string `json:"username"`
 }
 
 type Share struct {
