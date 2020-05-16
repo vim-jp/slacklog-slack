@@ -40,6 +40,15 @@ type UserProfile struct {
 	StatusExpiration      int                     `json:"status_expiration"`
 	Team                  string                  `json:"team"`
 	Fields                UserProfileCustomFields `json:"fields"`
+
+	// added for slacklog project.
+
+	AlwaysActive        bool   `json:"always_active"`
+	AvatarHash          string `json:"avatar_hash"`
+	Image1024           string `json:"image_1024"`
+	Image512            string `json:"image_512"`
+	IsCustomImage       bool   `json:"is_custom_image"`
+	StatusTextCanonical string `json:"status_text_canonical"`
 }
 
 // UserProfileCustomFields represents user profile's custom fields.
