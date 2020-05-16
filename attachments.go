@@ -91,6 +91,15 @@ type Attachment struct {
 
 	Ts json.Number `json:"ts,omitempty"`
 
+	// added for slacklog project.
+
 	ServiceName string `json:"service_name,omitempty"`
 	ServiceIcon string `json:"service_icon,omitempty"`
+
+	ThumbWidth  int `json:"thumb_width,omitempty"`
+	ThumbHeight int `json:"thumb_height,omitempty"`
+
+	VideoHTML       string `json:"video_html,omitempty"`
+	VideoHTMLWidth  int    `json:"video_html_width,omitempty"`
+	VideoHTMLHeight int    `json:"video_html_height,omitempty"`
 }

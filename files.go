@@ -87,6 +87,10 @@ type File struct {
 	NumStars        int      `json:"num_stars"`
 	IsStarred       bool     `json:"is_starred"`
 	Shares          Share    `json:"shares"`
+
+	// added for slacklog project.
+
+	ThumbVideo string `json:"thumb_video,omitempty"`
 }
 
 type Share struct {
